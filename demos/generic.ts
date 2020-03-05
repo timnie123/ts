@@ -32,8 +32,3 @@ class Stack<T extends string | number> {
 }
 
 const stack = new Stack<number>();
-
-function getValue<T extends Object, U extends keyof T>(obj: T, str: U) {
-    return obj[str];
-
-}
