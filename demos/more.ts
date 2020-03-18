@@ -10,7 +10,6 @@ const user = {
 function pick<T extends Object, U extends keyof T>(o: T, names: U[]): T[U][] {
     return names.map(n=>o[n]);
 }
-
 pick(user, ['name', 'role']);
 
 interface User {
